@@ -79,7 +79,8 @@
              "-Djava.library.path=target/native/macosx/x86_64:target/native/linux/x86_64:target/native/linux/x86"
              "-Djna.library.path=target/native/macosx/x86_64:target/native/linux/x86_64:target/native/linux/x86"
              "-Dfile.encoding=UTF-8"
-             "-Djava.awt.headless=true"]
+             "-Djava.awt.headless=true" "javax.xml.bind"]
+                
 
   :clean-targets ^{:protect false} [:target-path "resources/public/cljs/"]
 

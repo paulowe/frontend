@@ -12,6 +12,11 @@ ADD project.clj /frontend/project.clj
 RUN lein deps
 
 ADD package.json /frontend/package.json
+
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y nodejs \
+    npm                       # note this one
+    
 RUN npm install
 
 ADD . /frontend
